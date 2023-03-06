@@ -1,6 +1,10 @@
 body{
-    background-color: rgb(108, 156, 228);
+    background-color: rgb(114, 162, 228);
 }
 h1{
     color: bisque;
 }
+table tr:hover{
+    background-color: bisque;
+}
+    
