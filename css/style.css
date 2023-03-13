@@ -4,7 +4,12 @@ body{
 h1{
     color: bisque;
 }
-table tr:hover{
+tr:hover{
     background-color: bisque;
 }
-   
+/* estilo por etiqueta   */
+#nombre{
+    border: 1px solid rgb(153, 68, 68);
+    border-radius: 3px;
+    background-color: aqua;
+}
