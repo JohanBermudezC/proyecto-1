@@ -281,6 +281,7 @@ footer {
         height: 100vh;
         display: flex;
         flex-direction: column;
+        text-align: center;
         align-items: center;
         clip-path: circle(0.0% at 0 0);
     }
@@ -289,17 +290,19 @@ footer {
         background-color: #f38d8d;
         text-transform: uppercase;
         font-weight: 800;
-        margin-top: 0px;
+        margin-top: 20px;
         width: 50%;
         text-align: center;
 
     }
     .nav .enlaces-header a:hover{
-        color: #d03d3d;
+        color: #c95959;
         background-color: #fff;
+        
 
     }
     .nav .hamburgueropen{
         clip-path: circle(150% at 0.0);
+
     }
 }
