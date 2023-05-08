@@ -63,6 +63,22 @@ nav {
     transition: all ease-in-out .5s;
 }
 
+.hamburguer{
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    z-index: 100;
+    cursor: pointer;
+    transition: color 0.5s ease-in;
+    display: none;
+}
+
+.hamburguer>i{
+    font-size: 25px;
+    line-height: 80px;
+
+}
+
 .titulospro {
     text-align: left;
     margin: 20px 0;
@@ -116,6 +132,56 @@ nav {
     text-transform: uppercase;
     box-shadow: 0 8px 32px rgba(97, 31, 31, 0.46);
 }
+/*#################### EDUCATION ###########################*/
+.section-education {
+    background-color: #dbdbdb;
+}
+.section-education .title {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+    text-transform: uppercase;
+}
+.content-education{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-bottom: 25px;
+}
+.education{
+    width: 45%;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+}
+.education i{
+    border: 2px solid #d03d3d;
+    border-radius: 50%;
+    background-color: #d03d3d;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 36px; 
+}
+.education a{
+    color: gray;
+    font-size: 12px;
+    text-decoration: none;
+}
+.education:hover{
+    background-color: #d03d3d;
+    box-shadow: 0 0 8px gray;
+    transition: all ease-in-out .4s;
+    color: #fff;
+}
+.education a:hover{
+    color: #fff;
+}
+
+
+
 /*#################### Footer ###########################*/
 
 footer {
@@ -200,3 +266,40 @@ footer {
     background-color: #d03d3d;
 }
 
+/*#################### MEDIA QUERY ###########################*/
+
+@media screen and (max-width:700px) {
+    .hamburguer{
+        display: block;
+    }  
+    .enlaces-header{
+        position: fixed;
+        background-color: #d03d3d;
+        top: 0;
+        right: 0;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        clip-path: circle(0.0% at 0 0);
+    }
+    .nav .enlaces-header a{
+        color: #fff;
+        background-color: #f38d8d;
+        text-transform: uppercase;
+        font-weight: 800;
+        margin-top: 0px;
+        width: 50%;
+        text-align: center;
+
+    }
+    .nav .enlaces-header a:hover{
+        color: #d03d3d;
+        background-color: #fff;
+
+    }
+    .nav .hamburgueropen{
+        clip-path: circle(150% at 0.0);
+    }
+}
