@@ -1,0 +1,12 @@
+#cambiar_fondo{
+    background-color: beige;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid;
+    text-transform: uppercase;
+}
+#cabiar_fondo:hover{
+    background-color: aqua;
+    transition: all ease-in 0.6s;
+    box-shadow: 0 0 10px gray;
+}
