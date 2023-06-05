@@ -18,7 +18,7 @@ document.querySelectorAll(".enlaces-header")[0].addEventListener("click", functi
     enlaces_header.classList.toggle("hamburgueropen");
     document.querySelectorAll(".hamburguer")[0].style.color ="#000";
 })
-
+         
 
 //VARIABLES
 const nameuno="cualquier cosa texto, num, obj, array";
